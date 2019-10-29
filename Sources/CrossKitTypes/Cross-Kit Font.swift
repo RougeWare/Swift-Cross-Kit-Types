@@ -13,14 +13,14 @@ import UIKit
 
 
 
-typealias NativeFont = UIFont
+public typealias NativeFont = UIFont
 
 #elseif canImport(AppKit)
 import AppKit
 
 
 
-typealias NativeFont = NSFont
+public typealias NativeFont = NSFont
 
 #else
 #error("Unsupported platform; neither UIKit nor AppKit")
