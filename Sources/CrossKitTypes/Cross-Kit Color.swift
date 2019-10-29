@@ -13,14 +13,14 @@ import UIKit
 
 
 
-typealias NativeColor = UIColor
+public typealias NativeColor = UIColor
 
 #elseif canImport(AppKit)
 import AppKit
 
 
 
-typealias NativeColor = NSColor
+public typealias NativeColor = NSColor
 
 #else
 #error("Unsupported platform; neither UIKit nor AppKit")
