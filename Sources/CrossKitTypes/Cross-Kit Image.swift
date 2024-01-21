@@ -9,14 +9,14 @@
 
 
 #if !ONLY_APP_KIT && canImport(UIKit)
-import UIKit
+@_exported import UIKit
 
 
 
 public typealias NativeImage = UIImage
 
 #elseif canImport(AppKit)
-import AppKit
+@_exported import AppKit
 
 
 
